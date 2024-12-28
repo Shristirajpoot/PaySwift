@@ -1,12 +1,12 @@
 package main
 
 import (
+	"blackpay/config"
+	"blackpay/handlers"
+	"blackpay/services"
+	"blackpay/utils"
 	"fmt"
 	"log"
-	"paystack-payment/config"
-	"paystack-payment/handlers"
-	"paystack-payment/services"
-	"paystack-payment/utils"
 
 	"github.com/gin-gonic/gin"
 )

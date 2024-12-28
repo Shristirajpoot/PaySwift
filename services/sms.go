@@ -1,10 +1,10 @@
 package services
 
 import (
+	"blackpay/config"
 	"fmt"
 	"net/http"
 	"net/url"
-	"paystack-payment/config"
 	"strings"
 
 	"github.com/go-resty/resty/v2"
@@ -32,7 +32,7 @@ func (s *ArkeselService) SendSMS(phoneNumbers []string, message string) error {
 	params.Add("action", "send-sms")
 	params.Add("api_key", s.apiKey)
 	params.Add("to", strings.Join(phoneNumbers, ","))
-	params.Add("from", "TaxFlow")
+	params.Add("from", "BlackPay")
 	params.Add("sms", message)
 
 	resp, err := s.client.R().

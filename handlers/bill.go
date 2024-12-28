@@ -1,10 +1,10 @@
 package handlers
 
 import (
+	"blackpay/models"
+	"blackpay/services"
+	"blackpay/utils"
 	"net/http"
-	"paystack-payment/models"
-	"paystack-payment/services"
-	"paystack-payment/utils"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"

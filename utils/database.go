@@ -1,9 +1,9 @@
 package utils
 
 import (
+	"blackpay/config"
+	"blackpay/models"
 	"fmt"
-	"paystack-payment/config"
-	"paystack-payment/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

@@ -1,4 +1,4 @@
-module paystack-payment
+module blackpay
 
 go 1.16
 

@@ -1,7 +1,7 @@
 package services
 
 import (
-	"paystack-payment/config"
+	"blackpay/config"
 
 	"github.com/go-resty/resty/v2"
 )

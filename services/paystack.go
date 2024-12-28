@@ -1,12 +1,12 @@
 package services
 
 import (
+	"blackpay/config"
 	"crypto/hmac"
 	"crypto/sha512"
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"paystack-payment/config"
 
 	"github.com/go-resty/resty/v2"
 )

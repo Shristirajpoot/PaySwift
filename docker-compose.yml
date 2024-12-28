@@ -5,14 +5,14 @@ services:
       dockerfile: Dockerfile
     environment:
       - SERVER_PORT=9001
-      - PAYSTACK_SECRET_KEY='sk_live_53ece001c91b876db25c1a27f890b3aca76e0816'
+      - PAYSTACK_SECRET_KEY='example'
       - DB_HOST=postgres
       - DB_USER=postgres
       - DB_PASSWORD=postgres
       - DB_NAME=postgres
       - DB_PORT=5432
-      - COURIER_API_KEY='pk_prod_XTEHDRPGH8483RQCHVWY2G6K2ZG1'
-      - ARKESEL_API_KEY='c01yb2Vja3lWeXNaaFd0cVdwdkE'
+      - COURIER_API_KEY='example'
+      - ARKESEL_API_KEY='example'
     ports:
       - "9001:9001"
     depends_on:
