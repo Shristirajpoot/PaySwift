@@ -15,7 +15,7 @@ RUN go mod download
 COPY . .
 
 # Build the application
-RUN CGO_ENABLED=0 GOOS=linux go build -o rms-paystack
+RUN CGO_ENABLED=0 GOOS=linux go build -o blackpay
 
 # Deploy the application binary into a lean image
 FROM ubuntu:22.04 AS build-release-stage
@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/
 WORKDIR /server
 
 # Copy the binary from the build stage
-COPY --from=build-stage /app/rms-paystack /server/
+COPY --from=build-stage /app/blackpay /server/
 
 # Create a non-root user and switch to it
 RUN useradd -m nonroot
@@ -45,4 +45,4 @@ RUN apt-get update \
 
 USER nonroot
 
-CMD ["dockerize", "-wait", "tcp://postgres:5432", "/server/rms-paystack"]
+CMD ["dockerize", "-wait", "tcp://postgres:5432", "/server/blackpay"]
