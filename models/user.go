@@ -2,7 +2,7 @@ package models
 
 import (
 	"gorm.io/gorm"
-)
+)//hi
 
 type User struct {
 	gorm.Model

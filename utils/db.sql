@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS users (
     email TEXT NOT NULL UNIQUE,
     phone_number TEXT NOT NULL
 );
-
+--hi user
 CREATE TABLE IF NOT EXISTS bills (
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES users(id),

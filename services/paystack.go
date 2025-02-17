@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-resty/resty/v2"
 )
-
+//hi user
 type PaystackService struct {
 	secretKey string
 	client    *resty.Client

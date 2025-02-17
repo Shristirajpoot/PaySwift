@@ -3,7 +3,7 @@ package models
 import (
 	"gorm.io/gorm"
 )
-
+//hi user
 type Payment struct {
 	gorm.Model
 	UserID    uint    `json:"user_id"`

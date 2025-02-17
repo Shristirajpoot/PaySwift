@@ -5,4 +5,4 @@ CREATE TABLE IF NOT EXISTS payments (
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     status VARCHAR(255) NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id)
-);
+);--hi

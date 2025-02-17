@@ -3,7 +3,7 @@ package config
 import (
 	"os"
 )
-
+//hi
 type Config struct {
 	DatabaseURL       string
 	PaystackSecretKey string

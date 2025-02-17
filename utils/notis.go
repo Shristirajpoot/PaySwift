@@ -4,7 +4,7 @@ import (
 	"blackpay/models"
 	"fmt"
 )
-
+//hi userr
 func FormatBillNotification(bill models.Bill, paymentLink string) string {
 	return fmt.Sprintf(
 		"New bill notification:\nAmount: %.2f\nDue Date: %s\nDescription: %s\nPay now: %s",
